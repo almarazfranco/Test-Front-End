@@ -2,40 +2,36 @@
 
 Proyecto de testing Corebiz
 
-//////
+//////////////////
+
 
 # No sé logro
 
 - Carousel de productos: Por falta de tiempo no pude desarrollar "la funcionalidad de carousel".
 
-//////
+//////////////////
 
 # Para visualizar el proyecto:
 
 ## Primer paso
 Clonar o descargar repositorio
 
---
 
 ## Segundo paso
 Nos posicionamos en la carpeta raiz del proyecto y escribimos el comando "yarn install" para instalar los "node_modules"
 
---
 
 ## Tercer paso
 Nuevamente en la carpeta raiz del proyecto escribimos en la consola el comando "yarn dev"
 
---
 
 ## Cuarto paso
 Copiar el local server que nos arroja la consola y pegarlo en el navegador
 
---
 
 ## Cuarto paso
 Copiar el local server que nos arroja la consola y pegarlo en el navegador
 
---
 
 //////
 
