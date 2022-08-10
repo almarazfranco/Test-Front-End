@@ -121,6 +121,9 @@
 
 /* - Product box mobile - */
 @media screen and (max-width: 768px) {
+  .product-content-info {
+    padding: 7px 7px 15px;
+  }
   .product-image img {
     max-width: 132px;
   }
