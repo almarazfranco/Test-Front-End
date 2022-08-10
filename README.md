@@ -42,7 +42,7 @@ De esta manera al actualizar el sitio los productos quedaran guardados y el cont
 Se realizarón 2 verificaciones.
 
 - Input name: Que no se deje el campo vacio.
-- Input email: Que no se deje el campo vacio y que el valor que se envía corresponda con el formato de un mail.
+- Input email: Que no se deje el campo vacio y que el valor que se envía corresponda con el formato de un correo electrónico.
 
 Al enviarse el formulario correctamente encontraremos el siguiente mensaje en consola: "Form Created successfully"
 
