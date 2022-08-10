@@ -1,0 +1,120 @@
+/* - Header - */
+header {
+  background: #fff;
+  border-bottom: 1px solid #00000020;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+header .container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 44px;
+  justify-content: space-between;
+  padding: 16px 0 24px;
+}
+
+/* Searchbar */
+.searchbar {
+  align-items: center;
+  display: flex;
+  max-width: 718px;
+  position: relative;
+  width: 100%;
+}
+.searchbar input {
+  border: none;
+  border-bottom: 1px solid var(--gray-color);
+  display: block;
+  height: 30px;
+  outline: none;
+  width: 100%;
+}
+.searchbar input::placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+.searchbar input:focus {
+  border-color: #111111;
+}
+.searchbar img {
+  position: absolute;
+  right: 0;
+}
+
+/* Login - Cart */
+.login-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+}
+.login,
+.mini-cart {
+  align-items: center;
+  background: #ffffff;
+  border: none;
+  display: flex;
+  cursor: pointer;
+}
+
+/* Login */
+.login span {
+  color: var(--gray-color);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin: 5px 0 0 6.5px;
+  white-space: nowrap;
+}
+
+/* Mini cart */
+.mini-cart .cart-counter {
+  align-items: center;
+  background: #F8475F;
+  border-radius: 30px;
+  display: flex;
+  height: 16px;
+  margin-left: 5px;
+  position: relative;
+  width: 16px;
+}
+.mini-cart .cart-counter span {
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 700;
+  justify-content: center;
+  left: 0;
+  letter-spacing: 0em;
+  line-height: 14px;
+  position: absolute;
+  right: 0;
+}
+
+/* - Header mobile - */
+.menu-mobile {
+  background: #fff;
+}
+.top-row-header-mb {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.search-bar-mobile {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 7px 0 11px;
+  }
+}
