@@ -1,7 +1,6 @@
 # Test-Front-End
 
-Proyecto de testing Corebiz
-Se puede ver el proyecto en esta url: https://loquacious-bienenstitch-76b152.netlify.app/
+Proyecto de testing Corebiz, url: https://loquacious-bienenstitch-76b152.netlify.app/
 
 
 
