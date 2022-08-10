@@ -1,0 +1,138 @@
+/* - Product box - */
+
+.product-box {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.product-image,
+.product-content-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 216px;
+  width: 100%;
+}
+.product-image {
+  position: relative;
+}
+.product-image img {
+  width: 100%;
+}
+.product-hightlight {
+  align-items: flex-start;
+  background: url("data:image/svg+xml,%3Csvg width='82' height='73' viewBox='0 0 82 73' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82 72.0408L0.639969 7.62939e-06L82 7.62939e-06L82 72.0408Z' fill='%23F8475F'/%3E%3C/svg%3E%0A") no-repeat center center / contain;
+  display: flex;
+  height: 72.04px;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 12.25px 7.92px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 81.36px;
+}
+.product-hightlight span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.product-content-info {
+  padding: 7px 15px 15px;
+  transition: 0.3s;
+}
+.product-box:hover .product-content-info {
+  background: #E6E8EA;
+}
+
+.produc-name p {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: var(--gray-color);
+  display: -webkit-box;
+  font-size: 12px;
+  font-weight: 600;
+  height: 17px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+}
+
+.listPrice {
+  color: var(--gray-color);
+  font-size: 12px;
+  font-weight: 400;
+  height: 14px;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: line-through;
+}
+.price {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  height: 21px;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.product-installments p {
+  color: var(--gray-color);
+  font-size: 11px;
+  font-weight: 400;
+  height: 12px;
+  line-height: 15px;
+  letter-spacing: 0em;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.add-to-cart-button {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  height: 32px;
+  letter-spacing: 0em;
+  margin-top: 8px;
+  max-width: 125px;
+  opacity: 0;
+  padding: 0 26px;
+  text-align: center;
+  transition: 0.3s;
+  width: 100%;
+}
+.product-box:hover .add-to-cart-button {
+  opacity: 1;
+}
+
+/* - Product box mobile - */
+@media screen and (max-width: 768px) {
+  .product-image img {
+    max-width: 132px;
+  }
+  .listPrice,
+  .product-installments p {
+    font-size: 11px;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .add-to-cart-button {
+    max-width: 140px;
+    opacity: 1;
+  }
+}
