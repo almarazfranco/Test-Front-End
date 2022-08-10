@@ -8,7 +8,9 @@ const useForm = (initialValue = {}, urlPost) => {
 
   // Validation form
   let caractEmail = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  let validation = false;
+  let confirmName = false;
+  let confirmEmail = false;
+
 
   // Validation name
   const [validationName, setValidationName] = useState( {name: 'initial'} );
@@ -16,10 +18,10 @@ const useForm = (initialValue = {}, urlPost) => {
   const validationNameF = () => {
 
     if ( formState.name === '') {
-      validation = false;
+      confirmName = false;
       setValidationName( {name: 'incorrect'} );
     } else {
-      validation = true;
+      confirmName = true;
       setValidationName( {name: 'correct'} );
     };
 
@@ -31,10 +33,10 @@ const useForm = (initialValue = {}, urlPost) => {
   const validationEmailF = () => {
 
     if ( caractEmail.test(formState.email) === false) {   
-      validation = false;
+      confirmEmail = false;
       setValidationEmail( {email: 'incorrect'} );
     } else {
-      validation = true;
+      confirmEmail = true;
       setValidationEmail( {email: 'correct'} );
     };
 
@@ -102,7 +104,7 @@ const useForm = (initialValue = {}, urlPost) => {
     validationNameF();
     validationEmailF();
 
-    if (validation === false) return;
+    if (confirmName === false || confirmEmail === false ) return;
 
     postForm();
 
